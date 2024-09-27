@@ -46,7 +46,7 @@ def handle_client(conn, addr):
             else:
             # display client message
                 formatted_message = f"[{get_current_time()}] {username}: {msg}             "
-                print(f"\r\033[1m{formatted_message}\033[0m\n\033[1;36m[Server Message]:\033[0m ", end="", flush=True)  # Log the message on server terminal
+                print(f"\r\033[1m{formatted_message}\033[0m\n\033[1;36m[Server Message]:\033[0m ", end="", flush=True)  
                 broadcast_message(formatted_message, conn)
 
     finally:
